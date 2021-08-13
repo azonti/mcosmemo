@@ -18,6 +18,7 @@ brew install node
 
 brew install neovim
 npm install -g neovim
+# edit ~/.vimrc
 # edit ~/.config/nvim
 # edit ~/.profile.d
 
