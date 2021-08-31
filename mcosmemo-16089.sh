@@ -13,6 +13,7 @@ brew install node
 
 brew install neovim
 npm install -g neovim
+pip3 install pynvim
 # edit ~/.vimrc
 # edit ~/.config/nvim
 # edit ~/.profile.d
@@ -23,6 +24,9 @@ npm install -g neovim
 brew install gnupg
 brew install pinentry-mac
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+
+brew install --cask mactex-no-gui
+# edit ~/.profile.d
 
 # ------------------------------------------------------------------------------
 
@@ -35,6 +39,12 @@ brew install tmux
 # edit ~/.tmux.conf
 
 brew install gopls
+
+sudo tlmgr update --self --all
+sudo tlmgr paper a4
+# edit ~/.latexmkrc
+
+npm install -g hexo-cli
 
 # edit ~/.bashrc
 source ~/.bashrc

@@ -18,6 +18,7 @@ brew install node
 
 brew install neovim
 npm install -g neovim
+sudo pip3 install pynvim
 # edit ~/.vimrc
 # edit ~/.config/nvim
 # edit ~/.profile.d
@@ -47,6 +48,8 @@ brew install tmux
 # edit ~/.tmux.conf
 
 brew install gopls
+
+npm install -g hexo-cli
 
 # edit ~/.bashrc
 source ~/.bashrc
