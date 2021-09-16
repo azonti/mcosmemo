@@ -37,6 +37,9 @@ popd ~
 pip install grpcio
 # edit ~/.profile.d
 
+brew install --cask mactex-no-gui
+# edit ~/.profile.d
+
 # ------------------------------------------------------------------------------
 
 mkdir ~/.bashrc.d
@@ -49,6 +52,10 @@ brew install tmux
 
 brew install gopls
 
+sudo tlmgr update --self --all
+sudo tlmgr paper a4
+# edit ~/.latexmkrc
+
 npm install -g hexo-cli
 
 # edit ~/.bashrc
@@ -56,3 +63,5 @@ source ~/.bashrc
 
 brew tap homebrew/cask-fonts
 brew install font-cica
+
+brew install git-lfs

@@ -51,3 +51,5 @@ source ~/.bashrc
 
 brew tap homebrew/cask-fonts
 brew install font-cica
+
+brew install git-lfs
