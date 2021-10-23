@@ -7,8 +7,6 @@ curl -fsSL https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python
 mkdir ~/.profile.d
 # edit ~/.bash_profile
 
-# edit ~/.profile.d
-
 brew install node
 
 brew install neovim
@@ -41,7 +39,7 @@ mkdir ~/.bashrc.d
 brew install tmux
 # edit ~/.tmux.conf
 
-brew install gopls
+brew install hashicorp/tap/terraform-ls
 
 npm install -g hexo-cli
 
@@ -52,3 +50,10 @@ brew tap homebrew/cask-fonts
 brew install font-cica
 
 brew install git-lfs
+
+brew install tfenv
+
+tfenv install 1.0.7
+tfenv use 1.0.7
+
+brew install awscli
