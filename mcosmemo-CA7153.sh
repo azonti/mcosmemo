@@ -7,6 +7,8 @@ curl -fsSL https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python
 mkdir ~/.profile.d
 # edit ~/.bash_profile
 
+# edit ~/.profile.d
+
 brew install node
 
 brew install neovim
@@ -23,6 +25,13 @@ brew install gnupg
 brew install pinentry-mac
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 
+pushd ~
+curl -fsSL https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-350.0.0-darwin-x86_64.tar.gz | tar xv
+google-cloud-sdk/install.sh
+popd ~
+pip install grpcio
+# edit ~/.profile.d
+
 brew install --cask mactex-no-gui
 # edit ~/.profile.d
 
@@ -35,6 +44,8 @@ mkdir ~/.bashrc.d
 
 brew install tmux
 # edit ~/.tmux.conf
+
+brew install gopls
 
 brew install hashicorp/tap/terraform-ls
 

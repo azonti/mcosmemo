@@ -25,6 +25,13 @@ brew install gnupg
 brew install pinentry-mac
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 
+pushd ~
+curl -fsSL https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-350.0.0-darwin-x86_64.tar.gz | tar xv
+google-cloud-sdk/install.sh
+popd ~
+pip install grpcio
+# edit ~/.profile.d
+
 brew install --cask mactex-no-gui
 # edit ~/.profile.d
 
@@ -40,6 +47,8 @@ brew install tmux
 
 brew install gopls
 
+brew install hashicorp/tap/terraform-ls
+
 sudo tlmgr update --self --all
 sudo tlmgr paper a4
 # edit ~/.latexmkrc
@@ -53,3 +62,7 @@ brew tap homebrew/cask-fonts
 brew install font-cica
 
 brew install git-lfs
+
+brew install terraform
+
+brew install awscli
