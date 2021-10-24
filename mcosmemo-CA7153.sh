@@ -24,9 +24,6 @@ brew install pinentry-mac
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 
 brew install --cask mactex-no-gui
-sudo tlmgr update --self --all
-sudo tlmgr paper a4
-# edit ~/.latexmkrc
 # edit ~/.profile.d
 
 # ------------------------------------------------------------------------------
@@ -40,6 +37,10 @@ brew install tmux
 # edit ~/.tmux.conf
 
 brew install hashicorp/tap/terraform-ls
+
+sudo tlmgr update --self --all
+sudo tlmgr paper a4
+# edit ~/.latexmkrc
 
 npm install -g hexo-cli
 
