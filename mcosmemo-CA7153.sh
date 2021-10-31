@@ -32,9 +32,6 @@ popd ~
 pip install grpcio
 # edit ~/.profile.d
 
-brew install --cask mactex-no-gui
-# edit ~/.profile.d
-
 # ------------------------------------------------------------------------------
 
 mkdir ~/.bashrc.d
@@ -49,8 +46,6 @@ brew install gopls
 
 brew install hashicorp/tap/terraform-ls
 
-sudo tlmgr update --self --all
-sudo tlmgr paper a4
 # edit ~/.latexmkrc
 
 npm install -g hexo-cli
