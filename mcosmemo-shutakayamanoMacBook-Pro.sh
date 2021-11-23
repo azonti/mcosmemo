@@ -52,6 +52,8 @@ brew install tmux
 
 brew install gopls
 
+brew install hashicorp/tap/terraform-ls
+
 sudo tlmgr update --self --all
 sudo tlmgr paper a4
 # edit ~/.latexmkrc
@@ -65,3 +67,7 @@ brew tap homebrew/cask-fonts
 brew install font-cica
 
 brew install git-lfs
+
+brew install terraform
+
+brew install awscli
