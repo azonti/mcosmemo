@@ -10,6 +10,9 @@ brew tap homebrew/cask-fonts
 # install MacPorts
 # edit ~/.profile.d
 
+brew install go
+# edit ~/.profile.d
+
 brew install node
 
 brew install neovim
@@ -58,7 +61,6 @@ brew install git-lfs
 
 # install Docker Desktop
 
-brew install go
 brew install gopls
 
 npm install -g hexo-cli
