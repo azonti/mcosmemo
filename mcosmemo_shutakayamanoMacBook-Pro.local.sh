@@ -19,6 +19,7 @@ brew install neovim
 npm install -g neovim
 sudo port install py311-neovim
 sudo port select python python311
+sudo port select python3 python311
 # edit ~/.vimrc
 # edit ~/.config/nvim
 # edit ~/.profile.d
