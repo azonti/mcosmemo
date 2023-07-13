@@ -5,6 +5,8 @@ mkdir ~/.profile.d
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # edit ~/.profile.d
+brew install bash-completion
+# edit ~/.profile.d
 brew tap homebrew/cask-fonts
 
 # install MacPorts
