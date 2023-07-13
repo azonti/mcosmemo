@@ -1,16 +1,30 @@
 chsh -s /bin/bash
 
+# install Command Line Tools for Xcode
+# edit ~/.gitconfig
+
 mkdir ~/.profile.d
 # edit ~/.bash_profile
 
+mkdir ~/.bashrc.d
+# edit ~/.bashrc
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# edit ~/.profile.d
-brew install bash-completion
 # edit ~/.profile.d
 brew tap homebrew/cask-fonts
 
+brew install bash-completion
+# edit ~/.profile.d
+
 # install MacPorts
 # edit ~/.profile.d
+
+brew install asdf
+# edit ~/.profile.d
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin-add python
+asdf global golang system
+asdf global python system
 
 brew install go
 # edit ~/.profile.d
@@ -32,13 +46,6 @@ sudo port select python3 python311
 brew install gnupg
 # edit ~/.profile.d
 
-brew install asdf
-# edit ~/.profile.d
-asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
-asdf plugin-add python
-asdf global golang system
-asdf global python system
-
 # install Google Cloud SDK
 # edit ~/.profile.d
 gcloud components install app-engine-go
@@ -47,16 +54,6 @@ gcloud components install app-engine-go
 # edit ~/.profile.d
 
 brew install font-cica
-
-# ------------------------------------------------------------------------------
-
-mkdir ~/.bashrc.d
-# edit ~/.bashrc
-
-# edit ~/.gitconfig
-
-# edit ~/.bashrc
-source ~/.bashrc
 
 brew install git-lfs
 
