@@ -55,6 +55,9 @@ gcloud components install app-engine-go
 
 brew install font-cica
 
+# Google Chrome configuration
+## デザイン/フォントをカスタマイズ
+
 brew install git-lfs
 
 # install JDK
