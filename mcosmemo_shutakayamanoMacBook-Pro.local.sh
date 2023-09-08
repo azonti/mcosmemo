@@ -60,6 +60,8 @@ brew install font-cica
 
 brew install git-lfs
 
+brew install gh
+
 brew install jq
 
 # install JDK
