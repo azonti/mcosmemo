@@ -60,15 +60,15 @@ brew install font-cica
 
 brew install git-lfs
 
-brew install gh
-
-brew install jq
-
 # install JDK
 
 # install Docker Desktop
 
 brew install gopls
+
+brew install jq
+
+brew install gh
 
 npm install -g hexo-cli
 
