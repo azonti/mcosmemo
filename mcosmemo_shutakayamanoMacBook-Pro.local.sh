@@ -64,6 +64,8 @@ brew install git-lfs
 
 # install Docker Desktop
 
+brew install libxmlsec1 pkgconfig
+
 brew install gopls
 
 brew install jq
