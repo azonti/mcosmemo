@@ -76,6 +76,8 @@ go install github.com/rakyll/statik@latest
 
 go install github.com/x-motemen/gobump/cmd/gobump@latest
 
+go install github.com/Songmu/ghch/cmd/ghch@latest
+
 npm install -g hexo-cli
 
 # install GIMP
