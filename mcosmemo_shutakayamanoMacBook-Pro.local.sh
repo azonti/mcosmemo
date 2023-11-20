@@ -72,6 +72,10 @@ brew install jq
 
 brew install gh
 
+go install github.com/rakyll/statik@latest
+
+go install github.com/x-motemen/gobump/cmd/gobump@latest
+
 npm install -g hexo-cli
 
 # install GIMP
