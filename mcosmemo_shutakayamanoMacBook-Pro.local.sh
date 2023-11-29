@@ -64,7 +64,7 @@ brew install git-lfs
 
 # install Docker Desktop
 
-brew install libxmlsec1 pkgconfig
+brew install libxmlsec1 pkg-config
 
 brew install gopls
 
