@@ -82,6 +82,8 @@ go install github.com/tcnksm/ghr@latest
 
 go install github.com/Songmu/goxz/cmd/goxz@latest
 
+brew install terraform
+
 npm install -g hexo-cli
 
 # install GIMP
