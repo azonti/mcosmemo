@@ -84,6 +84,8 @@ go install github.com/Songmu/goxz/cmd/goxz@latest
 
 brew install tfenv
 
+brew install terraform-ls
+
 npm install -g hexo-cli
 
 # install GIMP
