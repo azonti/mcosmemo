@@ -88,9 +88,6 @@ brew install terraform-ls
 
 npm install -g hexo-cli
 
-sudo port install poetry
-sudo port select virtualenv virtualenv311
-
 # install GIMP
 brew install ghostscript
 
