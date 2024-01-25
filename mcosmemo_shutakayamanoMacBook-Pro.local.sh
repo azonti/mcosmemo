@@ -53,6 +53,9 @@ gcloud components install app-engine-go
 # install Android Studio
 # edit ~/.profile.d
 
+brew install ngrok
+# edit ~/.profile.d
+
 brew install font-cica
 
 # Google Chrome configuration
