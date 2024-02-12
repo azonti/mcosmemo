@@ -52,6 +52,7 @@ gcloud components install app-engine-go
 
 # install Android Studio
 # edit ~/.profile.d
+npm install -g nativescript
 
 brew install ngrok
 # edit ~/.profile.d
