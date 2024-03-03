@@ -72,6 +72,10 @@ brew install libxmlsec1 pkg-config
 
 brew install gopls
 
+go install golang.org/x/tools/cmd/goimports@latest
+
+brew install golangci-lint
+
 brew install jq
 
 brew install gh
