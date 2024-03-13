@@ -57,6 +57,8 @@ npm install -g nativescript
 brew install ngrok
 # edit ~/.profile.d
 
+npm install -g @vue/cli
+
 brew install font-cica
 
 # Google Chrome configuration
