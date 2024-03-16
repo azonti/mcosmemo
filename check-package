@@ -8,8 +8,8 @@ function npm_parse {
   cat - | tr ' ' '\n' | awk '{ print "npm/"$1 }'
 }
 
-function macport_parse {
-  cat - | tr ' ' '\n' | awk '{ print "macport/"$1 }'
+function macports_parse {
+  cat - | tr ' ' '\n' | awk '{ print "macports/"$1 }'
 }
 
 function goinstall_parse {
@@ -19,13 +19,13 @@ function goinstall_parse {
 EXPECTED=$( (\
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^brew install (.+)$/\1/p") | parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^npm install -g (.+)$/\1/p"; echo npm) | npm_parse;
-  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^sudo port install (.+)/\1/p") | macport_parse;
+  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^sudo port install (.+)/\1/p") | macports_parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^go install .+\/(.+)@.+/\1/p") | goinstall_parse;
 ) | sort )
 ACTUAL=$( comm -23 <( (\
   (brew info --json=v2 --installed | jq -r '.formulae[]|select(any(.installed[]; .installed_on_request)).full_name'; brew list --cask) | parse;
   npm ls -g --parseable --depth=0 2>/dev/null | sed -nE -e "s/^\/opt\/homebrew\/lib\/node_modules\/(.+)$/\1/p" | npm_parse;
-  port -q installed requested | awk '{ print $1 }' | macport_parse;
+  port -q installed requested | awk '{ print $1 }' | macports_parse;
   ls -1 ~/go/bin | goinstall_parse;
 ) | sort ) <( (\
   true

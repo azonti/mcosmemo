@@ -70,6 +70,9 @@ brew install git-lfs
 
 # install Docker Desktop
 
+sudo port install py27-grpcio
+sudo port select python2 python27
+
 brew install libxmlsec1 pkg-config
 
 brew install gopls
