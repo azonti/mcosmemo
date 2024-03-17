@@ -3,6 +3,8 @@ chsh -s /bin/bash
 # install Command Line Tools for Xcode
 # edit ~/.gitconfig
 
+# install Docker Desktop
+
 mkdir ~/.profile.d
 # edit ~/.bash_profile
 
@@ -31,6 +33,8 @@ brew install go
 
 brew install node
 
+# install JDK
+
 brew install neovim
 npm install -g neovim
 sudo port install py311-neovim
@@ -54,10 +58,10 @@ gcloud components install app-engine-go
 # edit ~/.profile.d
 npm install -g nativescript
 
+# install Xcode
+
 brew install ngrok
 # edit ~/.profile.d
-
-npm install -g @vue/cli
 
 brew install font-cica
 
@@ -66,22 +70,26 @@ brew install font-cica
 
 brew install git-lfs
 
-# install JDK
-
-# install Docker Desktop
-
 sudo port install py27-grpcio
 sudo port select python2 python27
 
 brew install libxmlsec1 pkg-config
 
+brew install tfenv
+
 brew install gopls
+
+brew install terraform-ls
+
+npm install -g @vue/cli
+
+brew install jq
+
+npm install -g hexo-cli
 
 go install golang.org/x/tools/cmd/goimports@latest
 
 brew install golangci-lint
-
-brew install jq
 
 brew install gh
 
@@ -95,11 +103,7 @@ go install github.com/tcnksm/ghr@latest
 
 go install github.com/Songmu/goxz/cmd/goxz@latest
 
-brew install tfenv
-
-brew install terraform-ls
-
-npm install -g hexo-cli
+# install Discord
 
 # install GIMP
 brew install ghostscript
@@ -107,3 +111,7 @@ brew install ghostscript
 # install Audacity
 
 brew install font-chewy
+
+# install Android File Transfer
+
+# install Zotero
