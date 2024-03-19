@@ -24,8 +24,8 @@ EXPECTED=$( (\
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^brew install (.+)$/\1/p") | parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^brew gem install (.+) --homebrew-ruby$/\1/p") | gem_parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^npm install -g (.+)$/\1/p"; echo npm) | npm_parse;
-  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^sudo port install (.+)/\1/p") | macports_parse;
-  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^go install .+\/(.+)@.+/\1/p") | goinstall_parse;
+  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^sudo port install ([^+]+)( \+.+)*$/\1/p") | macports_parse;
+  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^go install .+\/(.+)@.+$/\1/p") | goinstall_parse;
 ) | sort )
 ACTUAL=$( comm -23 <( (\
   (brew info --json=v2 --installed | jq -r '.formulae[]|select(any(.installed[]; .installed_on_request)).full_name'; brew list --cask) | parse;

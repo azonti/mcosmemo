@@ -83,6 +83,8 @@ sudo port select python2 python27
 
 brew install libxmlsec1 pkg-config
 
+sudo port install poetry +python311
+
 brew install tfenv
 
 brew install gopls
