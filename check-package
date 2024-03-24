@@ -12,6 +12,10 @@ function npm_parse {
   cat - | tr ' ' '\n' | awk '{ print "npm/"$1 }'
 }
 
+function opam_parse {
+  cat - | tr ' ' '\n' | awk '{ print "opam/"$1 }'
+}
+
 function macports_parse {
   cat - | tr ' ' '\n' | awk '{ print "macports/"$1 }'
 }
@@ -24,12 +28,14 @@ EXPECTED=$( (\
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^brew install (.+)$/\1/p") | parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^brew gem install (.+) --homebrew-ruby$/\1/p") | gem_parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^npm install -g (.+)$/\1/p"; echo npm) | npm_parse;
+  (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^opam install (.+)$/\1/p"; echo ocaml ocaml-base-compiler) | opam_parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^sudo port install ([^+]+)( \+.+)*$/\1/p") | macports_parse;
   (cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^go install .+\/(.+)@.+$/\1/p") | goinstall_parse;
 ) | sort )
 ACTUAL=$( comm -23 <( (\
   (brew info --json=v2 --installed | jq -r '.formulae[]|select(any(.installed[]; .installed_on_request)).full_name'; brew list --cask) | parse;
   npm ls -g --parseable --depth=0 2>/dev/null | sed -nE -e "s/^\/opt\/homebrew\/lib\/node_modules\/(.+)$/\1/p" | npm_parse;
+  opam list --roots | awk 'NR >= 3 { print $1 }' | opam_parse;
   port -q installed requested | awk '{ print $1 }' | macports_parse;
   ls -1 ~/go/bin | goinstall_parse;
 ) | sort ) <( (\

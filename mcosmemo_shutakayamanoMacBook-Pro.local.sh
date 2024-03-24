@@ -33,6 +33,11 @@ brew install go
 
 brew install node
 
+brew install opam
+opam init
+# edit ~/.profile.d
+opam repo add coq-released https://coq.inria.fr/opam/released
+
 # install JDK
 
 brew install ruby brew-gem
@@ -125,3 +130,5 @@ brew install font-chewy
 # install Android File Transfer
 
 # install Zotero
+
+opam install coq coq-mathcomp-ssreflect
