@@ -102,6 +102,8 @@ brew install jq
 
 npm install -g hexo-cli
 
+brew install nkf
+
 go install golang.org/x/tools/cmd/goimports@latest
 
 brew install golangci-lint
