@@ -81,6 +81,11 @@ brew install font-cica
 # Google Chrome configuration
 ## デザイン/フォントをカスタマイズ
 
+brew install mactex-no-gui
+sudo tlmgr update --self --all
+sudo tlmgr paper a4
+# edit ~/.latexmkrc
+
 brew install git-lfs
 
 sudo port install py27-grpcio
