@@ -108,6 +108,8 @@ brew install jq
 
 npm install -g hexo-cli
 
+brew install pdftk-java
+
 brew install nkf
 
 go install golang.org/x/tools/cmd/goimports@latest
