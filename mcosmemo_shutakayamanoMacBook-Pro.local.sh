@@ -142,3 +142,5 @@ brew install font-chewy
 # install Zotero
 
 opam install coq coq-mathcomp-ssreflect
+
+brew install wine-stable
