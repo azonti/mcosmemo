@@ -120,6 +120,8 @@ brew install gh
 
 go install github.com/rakyll/statik@latest
 
+go install golang.org/x/lint/golint@latest
+
 go install github.com/x-motemen/gobump/cmd/gobump@latest
 
 go install github.com/Songmu/ghch/cmd/ghch@latest
@@ -143,4 +145,4 @@ brew install font-chewy
 
 opam install coq coq-mathcomp-ssreflect
 
-brew install wine-stable
+brew install wine-stable gstreamer-runtime
