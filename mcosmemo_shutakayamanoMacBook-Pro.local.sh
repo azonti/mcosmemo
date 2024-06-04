@@ -109,6 +109,7 @@ brew install jq
 npm install -g hexo-cli
 
 brew install pdftk-java
+brew uninstall --ignore-dependencies python
 
 brew install nkf
 
