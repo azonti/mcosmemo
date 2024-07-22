@@ -33,15 +33,7 @@ brew install go
 
 brew install node
 
-brew install opam
-opam init
-# edit ~/.profile.d
-opam repo add coq-released https://coq.inria.fr/opam/released
-
 # install JDK
-
-brew install ruby brew-gem
-brew link ruby --force
 
 brew install neovim
 npm install -g neovim
@@ -64,14 +56,8 @@ gcloud components install app-engine-go
 
 # install Android Studio
 # edit ~/.profile.d
-npm install -g nativescript
 
 # install Xcode
-brew gem install cocoapods --homebrew-ruby
-# edit ~/.profile.d
-brew gem install xcodeproj --homebrew-ruby
-# edit ~/.profile.d
-sudo port install py311-six
 
 brew install ngrok
 # edit ~/.profile.d
@@ -80,11 +66,6 @@ brew install font-cica
 
 # Google Chrome configuration
 ## デザイン/フォントをカスタマイズ
-
-brew install mactex-no-gui
-sudo tlmgr update --self --all
-sudo tlmgr paper a4
-# edit ~/.latexmkrc
 
 brew install git-lfs
 
@@ -102,14 +83,9 @@ brew install gopls
 
 brew install terraform-ls
 
-npm install -g @vue/cli
-
 brew install jq
 
 npm install -g hexo-cli
-
-brew install pdftk-java
-brew uninstall --ignore-dependencies python
 
 brew install nkf
 
@@ -141,9 +117,3 @@ brew install ghostscript
 brew install font-chewy
 
 # install Android File Transfer
-
-# install Zotero
-
-opam install coq coq-mathcomp-ssreflect
-
-brew install wine-stable gstreamer-runtime
