@@ -3,8 +3,6 @@ chsh -s /bin/bash
 # install Command Line Tools for Xcode
 # edit ~/.gitconfig
 
-# install Docker Desktop
-
 mkdir ~/.profile.d
 # edit ~/.bash_profile
 
@@ -60,6 +58,9 @@ gcloud components install app-engine-go
 # install Xcode
 
 brew install ngrok
+# edit ~/.profile.d
+
+# install Rancher Desktop
 # edit ~/.profile.d
 
 brew install font-cica
