@@ -63,7 +63,7 @@ brew install ngrok
 # install Rancher Desktop
 # edit ~/.profile.d
 
-brew install font-cica
+brew install font-hackgen-nerd
 
 # Google Chrome configuration
 ## デザイン/フォントをカスタマイズ
