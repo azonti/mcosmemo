@@ -13,6 +13,8 @@ mkdir ~/.bashrc.d
 # edit ~/.profile.d
 brew tap homebrew/cask-fonts
 
+brew install iterm2
+
 brew install bash-completion
 # edit ~/.profile.d
 
