@@ -35,6 +35,9 @@ brew install node
 
 # install JDK
 
+brew install ruby brew-gem
+brew link ruby --force
+
 brew install neovim
 npm install -g neovim
 sudo port install py311-neovim
@@ -56,8 +59,14 @@ gcloud components install app-engine-go
 
 # install Android Studio
 # edit ~/.profile.d
+npm install -g nativescript
 
 # install Xcode
+brew gem install cocoapods --homebrew-ruby
+# edit ~/.profile.d
+brew gem install xcodeproj --homebrew-ruby
+# edit ~/.profile.d
+sudo port install py311-six
 
 brew install ngrok
 # edit ~/.profile.d
@@ -76,7 +85,7 @@ sudo port install py27-grpcio
 sudo port select python2 python27
 sudo port install py311-grpcio
 
-brew install libxmlsec1 pkg-config
+brew install libxmlsec1 pkgconf
 
 sudo port install poetry +python311
 
