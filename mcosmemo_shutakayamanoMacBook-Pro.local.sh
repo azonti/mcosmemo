@@ -15,6 +15,11 @@ brew tap homebrew/cask-fonts
 
 brew install iterm2
 
+brew install font-hackgen-nerd
+
+# Google Chrome configuration
+## デザイン/フォントをカスタマイズ
+
 brew install bash-completion
 # edit ~/.profile.d
 
@@ -27,6 +32,8 @@ asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
 asdf plugin-add python
 asdf global golang system
 asdf global python system
+
+brew install tfenv
 
 brew install go
 # edit ~/.profile.d
@@ -53,10 +60,6 @@ sudo port select python3 python311
 brew install gnupg
 # edit ~/.profile.d
 
-# install Google Cloud SDK
-# edit ~/.profile.d
-gcloud components install app-engine-go
-
 # install Android Studio
 # edit ~/.profile.d
 npm install -g nativescript
@@ -68,18 +71,33 @@ brew gem install xcodeproj --homebrew-ruby
 # edit ~/.profile.d
 sudo port install py311-six
 
+# install Google Cloud SDK
+# edit ~/.profile.d
+gcloud components install app-engine-go
+
 brew install ngrok
 # edit ~/.profile.d
 
 # install Rancher Desktop
 # edit ~/.profile.d
 
-brew install font-hackgen-nerd
-
-# Google Chrome configuration
-## デザイン/フォントをカスタマイズ
-
 brew install git-lfs
+
+brew install gh
+
+brew install gopls
+
+go install golang.org/x/tools/cmd/goimports@latest
+
+brew install golangci-lint
+
+brew install terraform-ls
+
+brew install jq
+
+npm install -g hexo-cli
+
+# install Discord
 
 sudo port install py27-grpcio
 sudo port select python2 python27
@@ -89,23 +107,7 @@ brew install libxmlsec1 pkgconf
 
 sudo port install poetry +python311
 
-brew install tfenv
-
-brew install gopls
-
-brew install terraform-ls
-
-brew install jq
-
-npm install -g hexo-cli
-
 brew install nkf
-
-go install golang.org/x/tools/cmd/goimports@latest
-
-brew install golangci-lint
-
-brew install gh
 
 go install github.com/rakyll/statik@latest
 
@@ -118,8 +120,6 @@ go install github.com/Songmu/ghch/cmd/ghch@latest
 go install github.com/tcnksm/ghr@latest
 
 go install github.com/Songmu/goxz/cmd/goxz@latest
-
-# install Discord
 
 # install GIMP
 brew install ghostscript
