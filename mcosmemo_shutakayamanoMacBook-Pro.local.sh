@@ -90,6 +90,14 @@ go install golang.org/x/tools/cmd/goimports@latest
 
 brew install golangci-lint
 
+npm install -g typescript-language-server
+
+npm install -g eslint_d
+
+npm install -g @fsouza/prettierd
+
+npm install -g @vue/language-server @vue/typescript-plugin
+
 brew install terraform-ls
 
 brew install jq
