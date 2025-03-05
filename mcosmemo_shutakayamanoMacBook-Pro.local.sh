@@ -14,6 +14,17 @@ mkdir ~/.bashrc.d
 brew tap homebrew/cask-fonts
 
 brew install iterm2
+# iTerm2 configuration
+## General/Closing/Quit when all windows are closed
+## Profiles/Default/Colors/Color Presets
+## Profiles/Default/Text/Font
+## Profiles/Default/Window/Window Appearance/Transparency
+## Profiles/Default/Terminal/Scrollback Buffer/Unlimited scrollback
+## Profiles/Default/Keys/Key Mappings/Presets
+
+# ターミナル configuration
+## プロファイル/Pro/デフォルト
+## プロファイル/Pro/テキスト/フォント
 
 brew install font-hackgen-nerd
 
@@ -84,6 +95,9 @@ brew install ngrok
 # edit ~/.profile.d
 
 # install Rancher Desktop
+# Rancher Desktop configuration
+## General/Administrative Access/Allow to acquire administrative credentials (sudo access)
+## Application/Behavior/Automatically start at login
 # edit ~/.profile.d
 
 brew install git-lfs
@@ -151,3 +165,7 @@ brew install ghostscript
 brew install font-chewy
 
 # install Android File Transfer
+
+# install ChatGPT
+# ChatGPT configuration
+## アプリ/ChatGPT を表示/メニューバー内のみ
