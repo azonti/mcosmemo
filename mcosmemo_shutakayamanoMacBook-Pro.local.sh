@@ -115,8 +115,10 @@ brew install elixir-ls
 npm install -g typescript-language-server
 
 npm install -g eslint_d
+# edit ~/.profile.d
 
 npm install -g @fsouza/prettierd
+# edit ~/.profile.d
 
 npm install -g @vue/language-server @vue/typescript-plugin
 
