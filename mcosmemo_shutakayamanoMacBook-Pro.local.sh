@@ -124,6 +124,8 @@ npm install -g @vue/language-server @vue/typescript-plugin
 
 brew install terraform-ls
 
+npm install -g @openai/codex
+
 brew install jq
 
 npm install -g hexo-cli
