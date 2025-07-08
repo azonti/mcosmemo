@@ -130,6 +130,8 @@ npm install -g @anthropic-ai/claude-code
 
 brew install jq
 
+brew install ripgrep
+
 npm install -g hexo-cli
 
 # install Discord
@@ -171,7 +173,3 @@ brew install ghostscript
 brew install font-chewy
 
 # install Android File Transfer
-
-# install ChatGPT
-# ChatGPT configuration
-## アプリ/ChatGPT を表示/メニューバー内のみ
