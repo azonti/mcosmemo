@@ -167,6 +167,14 @@ go install github.com/tcnksm/ghr@latest
 
 go install github.com/Songmu/goxz/cmd/goxz@latest
 
+go install github.com/joho/godotenv/cmd/godotenv@latest
+
+go install golang.org/x/vuln/cmd/govulncheck@latest
+
+go install go.uber.org/mock/mockgen@latest
+
+brew install helm
+
 # install GIMP
 brew install ghostscript
 
