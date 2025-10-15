@@ -11,7 +11,6 @@ mkdir ~/.bashrc.d
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # edit ~/.profile.d
-brew tap homebrew/cask-fonts
 
 brew install iterm2
 # iTerm2 configuration
