@@ -137,10 +137,6 @@ npm install -g hexo-cli
 
 # install Immersed
 
-sudo port install py27-grpcio
-sudo port select python2 python27
-sudo port install py311-grpcio
-
 brew install libxmlsec1 pkgconf
 
 sudo port install poetry +python311
