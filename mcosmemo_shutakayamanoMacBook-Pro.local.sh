@@ -131,6 +131,8 @@ brew install jq
 
 brew install ripgrep
 
+brew install ast-grep
+
 npm install -g hexo-cli
 
 # install Discord
