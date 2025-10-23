@@ -147,6 +147,8 @@ brew install nkf
 
 brew install openssl@3 autoconf
 
+brew install libavif webp
+
 brew install direnv
 # edit ~/.bashrc.d
 
