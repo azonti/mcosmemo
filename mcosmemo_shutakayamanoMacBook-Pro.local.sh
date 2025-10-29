@@ -133,6 +133,8 @@ brew install ripgrep
 
 brew install ast-grep
 
+brew install mtr
+
 npm install -g hexo-cli
 
 # install Discord
