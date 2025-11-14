@@ -158,6 +158,8 @@ brew install direnv
 
 brew install protobuf
 
+brew install awscli
+
 go install github.com/rakyll/statik@latest
 
 go install golang.org/x/lint/golint@latest
