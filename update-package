@@ -1,0 +1,41 @@
+#!/bin/bash
+export SUDO_ASKPASS=~/sudo_askpass.sh
+
+
+echo ""
+echo "=== Updating system packages ==="
+echo ""
+brew upgrade
+
+
+echo ""
+echo "=== Updating gem packages ==="
+echo ""
+GEMPACKAGES=$(brew info --json=v2 --installed | jq -r '.formulae[]|select(any(.installed[]; .installed_on_request)).full_name' | sed -nE -e "s/^gem-(.+)$/\1/p")
+for GEMPACKAGE in $GEMPACKAGES; do
+    echo "Updating gem package $GEMPACKAGE"
+    brew gem upgrade "$GEMPACKAGE" --homebrew-ruby
+done
+
+
+echo ""
+echo "=== Updating npm packages ==="
+echo ""
+npm update -g
+
+
+echo ""
+echo "=== Updating MacPorts packages ==="
+echo ""
+sudo --askpass port -N selfupdate
+sudo --askpass port -N upgrade outdated
+
+echo ""
+echo "=== Updating Go installs ==="
+echo ""
+GOINSTALLS=$(ls -1 ~/go/bin)
+for GOINSTALL in $GOINSTALLS; do
+    GOPACKAGE=$(cat mcosmemo_$HOSTNAME.sh | sed -nE -e "s/^go install (.+\/$GOINSTALL)@latest$/\1/p")
+    echo "Updating Go install $GOINSTALL (package $GOPACKAGE)"
+    go install "$GOPACKAGE@latest"
+done
