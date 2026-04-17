@@ -5,7 +5,7 @@ function parse {
 }
 
 function gem_parse {
-  cat - | tr ' ' '\n' | awk '{ print "gem-"$1 }'
+  cat - | tr ' ' '\n' | awk '{ print "brew-gem/gems/gem-"$1 }'
 }
 
 function npm_parse {
@@ -30,7 +30,7 @@ EXPECTED=$( (\
 ACTUAL=$( comm -23 <( (\
   (brew info --json=v2 --installed | jq -r '.formulae[]|select(any(.installed[]; .installed_on_request)).full_name'; brew list --cask) | parse;
   npm ls -g --parseable --depth=0 2>/dev/null | sed -nE -e "s/^\/opt\/homebrew\/lib\/node_modules\/(.+)$/\1/p" | npm_parse;
-  port -q installed requested | awk '{ print $1 }' | macports_parse;
+  port -q installed requested | awk '{ print $1 }' | uniq | macports_parse;
   ls -1 ~/go/bin | goinstall_parse;
 ) | sort ) <( (\
   true

@@ -123,8 +123,6 @@ npm install -g @vue/language-server @vue/typescript-plugin
 
 brew install terraform-ls
 
-npm install -g @github/copilot-language-server
-
 npm install -g @openai/codex
 
 npm install -g @anthropic-ai/claude-code
