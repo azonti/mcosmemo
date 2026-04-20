@@ -61,7 +61,7 @@ brew install node
 brew install ruby brew-gem
 brew link ruby --force
 
-brew install neovim
+brew install neovim tree-sitter-cli
 npm install -g neovim
 sudo port install py311-neovim
 sudo port select python python311
