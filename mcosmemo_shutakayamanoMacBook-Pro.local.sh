@@ -12,6 +12,10 @@ mkdir ~/.bashrc.d
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # edit ~/.profile.d
 
+brew install bash
+sudo bash -c 'echo "/opt/homebrew/bin/bash" >> /etc/shells'
+chsh -s /opt/homebrew/bin/bash
+
 brew install iterm2
 # iTerm2 configuration
 ## General/Closing/Quit when all windows are closed
