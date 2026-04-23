@@ -16,6 +16,8 @@ brew install bash
 sudo bash -c 'echo "/opt/homebrew/bin/bash" >> /etc/shells'
 chsh -s /opt/homebrew/bin/bash
 
+brew install git
+
 brew install iterm2
 # iTerm2 configuration
 ## General/Closing/Quit when all windows are closed
