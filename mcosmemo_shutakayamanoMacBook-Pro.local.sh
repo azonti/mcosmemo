@@ -132,7 +132,7 @@ brew install terraform-ls
 
 npm install -g @openai/codex
 
-npm install -g @anthropic-ai/claude-code
+brew install claude-code
 
 brew install jq
 
