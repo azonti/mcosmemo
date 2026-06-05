@@ -112,7 +112,7 @@ brew install gh
 
 brew install gopls
 
-go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/cmd/goimports@v0.45.0
 
 brew install golangci-lint
 
@@ -165,23 +165,23 @@ brew install protobuf
 
 brew install awscli
 
-go install github.com/rakyll/statik@latest
+go install github.com/rakyll/statik@v0.1.8
 
-go install golang.org/x/lint/golint@latest
+go install golang.org/x/lint/golint@v0.0.0-20241112194109-818c5a804067
 
-go install github.com/x-motemen/gobump/cmd/gobump@latest
+go install github.com/x-motemen/gobump/cmd/gobump@v0.3.0
 
-go install github.com/Songmu/ghch/cmd/ghch@latest
+go install github.com/Songmu/ghch/cmd/ghch@v0.10.4
 
-go install github.com/tcnksm/ghr@latest
+go install github.com/tcnksm/ghr@v0.18.3
 
-go install github.com/Songmu/goxz/cmd/goxz@latest
+go install github.com/Songmu/goxz/cmd/goxz@v0.10.1
 
-go install github.com/joho/godotenv/cmd/godotenv@latest
+go install github.com/joho/godotenv/cmd/godotenv@v1.5.1
 
-go install golang.org/x/vuln/cmd/govulncheck@latest
+go install golang.org/x/vuln/cmd/govulncheck@v1.3.0
 
-go install go.uber.org/mock/mockgen@latest
+go install go.uber.org/mock/mockgen@v0.6.0
 
 brew install helm
 
