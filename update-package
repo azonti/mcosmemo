@@ -5,7 +5,7 @@ export SUDO_ASKPASS=~/sudo_askpass.sh
 echo ""
 echo "=== Updating system packages ==="
 echo ""
-brew upgrade
+brew upgrade --no-ask
 
 
 echo ""

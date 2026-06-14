@@ -66,6 +66,7 @@ brew install node
 
 brew install ruby brew-gem
 brew link ruby --force
+brew trust brew-gem/gems
 
 brew install neovim
 brew install tree-sitter-cli
