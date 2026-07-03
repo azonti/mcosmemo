@@ -167,6 +167,7 @@ brew install protobuf
 brew install awscli
 
 brew tap oven-sh/bun
+brew trust oven-sh/bun
 brew install bun
 
 go install github.com/rakyll/statik@v0.1.8
