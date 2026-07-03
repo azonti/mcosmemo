@@ -170,6 +170,8 @@ brew tap oven-sh/bun
 brew trust oven-sh/bun
 brew install bun
 
+npm install -g firebase-tools
+
 go install github.com/rakyll/statik@v0.1.8
 
 go install golang.org/x/lint/golint@v0.0.0-20241112194109-818c5a804067
