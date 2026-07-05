@@ -49,11 +49,13 @@ asdf plugin-add python
 asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf global golang system
-asdf global python system
-asdf global erlang system
-asdf global elixir system
-asdf global nodejs system
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf set -u golang system
+asdf set -u python system
+asdf set -u erlang system
+asdf set -u elixir system
+asdf set -u nodejs system
+asdf set -u ruby system
 
 brew install tfenv
 
