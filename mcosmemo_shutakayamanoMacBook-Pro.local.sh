@@ -131,6 +131,8 @@ npm install -g @vue/language-server @vue/typescript-plugin
 
 brew install terraform-ls
 
+brew install ruby-lsp
+
 npm install -g @openai/codex
 
 brew install claude-code
