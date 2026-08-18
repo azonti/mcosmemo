@@ -1,4 +1,6 @@
 chsh -s /bin/bash
+# ターミナル configuration
+## プロファイル/Pro/デフォルト
 
 # install Command Line Tools for Xcode
 # edit ~/.gitconfig
@@ -12,26 +14,21 @@ mkdir ~/.bashrc.d
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # edit ~/.profile.d
 
-brew install bash
-sudo bash -c 'echo "/opt/homebrew/bin/bash" >> /etc/shells'
-chsh -s /opt/homebrew/bin/bash
-
-brew install git
-
 brew install iterm2
 # iTerm2 configuration
 ## General/Closing/Quit when all windows are closed
-## Profiles/Default/Colors/Color Presets
-## Profiles/Default/Text/Font
-## Profiles/Default/Window/Window Appearance/Transparency
-## Profiles/Default/Terminal/Scrollback Buffer/Unlimited scrollback
-## Profiles/Default/Keys/Key Mappings/Presets
+## Profiles/Default/Colors/Color Preset
+## Profiles/Default/Window/Transparency
+## Profiles/Default/Terminal/Scrollback lines/Unlimited scrollback
+## Profiles/Default/Keys/Key Bindings/Presets
+
+brew install font-hackgen-nerd
 
 # ターミナル configuration
 ## プロファイル/Pro/デフォルト
-## プロファイル/Pro/テキスト/フォント
 
-brew install font-hackgen-nerd
+# iTerm2 configuration
+## Profiles/Default/Text/Font
 
 # Google Chrome configuration
 ## デザイン/フォントをカスタマイズ
@@ -44,11 +41,11 @@ brew install bash-completion
 
 brew install asdf
 # edit ~/.profile.d
-asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
-asdf plugin-add python
-asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin add python
+asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
+asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf set -u golang system
 asdf set -u python system
@@ -63,15 +60,14 @@ brew install go
 # edit ~/.profile.d
 
 brew install node
+# edit ~/.npmrc
 
 # install JDK
 
 brew install ruby brew-gem
-brew link ruby --force
 brew trust brew-gem/gems
 
-brew install neovim
-brew install tree-sitter-cli
+brew install neovim tree-sitter-cli
 npm install -g neovim
 sudo port install py311-neovim
 sudo port select python python311
@@ -147,13 +143,9 @@ brew install mtr
 
 npm install -g hexo-cli
 
-# install Discord
-
 # install Immersed
 
 brew install libxmlsec1 pkgconf
-
-sudo port install poetry +python311
 
 brew install nkf
 
@@ -193,12 +185,3 @@ go install golang.org/x/vuln/cmd/govulncheck@v1.3.0
 go install go.uber.org/mock/mockgen@v0.6.0
 
 brew install helm
-
-# install GIMP
-brew install ghostscript
-
-# install Audacity
-
-brew install font-chewy
-
-# install Android File Transfer
