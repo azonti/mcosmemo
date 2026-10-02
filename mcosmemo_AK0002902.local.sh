@@ -185,3 +185,5 @@ go install golang.org/x/vuln/cmd/govulncheck@v1.3.0
 go install go.uber.org/mock/mockgen@v0.6.0
 
 brew install helm
+
+brew install httpie
