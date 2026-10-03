@@ -172,7 +172,7 @@ go install golang.org/x/lint/golint@v0.0.0-20241112194109-818c5a804067
 
 go install github.com/x-motemen/gobump/cmd/gobump@v0.3.0
 
-go install github.com/Songmu/ghch/cmd/ghch@v0.10.4
+go install github.com/Songmu/ghch/cmd/ghch@v0.11.0
 
 go install github.com/tcnksm/ghr@v0.18.3
 
