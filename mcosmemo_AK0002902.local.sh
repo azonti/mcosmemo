@@ -184,6 +184,8 @@ go install golang.org/x/vuln/cmd/govulncheck@v1.3.0
 
 go install go.uber.org/mock/mockgen@v0.6.0
 
+go install github.com/suzuki-shunsuke/pinact/v4/cmd/pinact@v4.1.1
+
 brew install helm
 
 brew install httpie
