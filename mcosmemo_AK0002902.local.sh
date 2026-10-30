@@ -174,7 +174,7 @@ go install github.com/x-motemen/gobump/cmd/gobump@v0.3.0
 
 go install github.com/Songmu/ghch/cmd/ghch@v0.10.4
 
-go install github.com/tcnksm/ghr@v0.18.3
+go install github.com/tcnksm/ghr@v0.18.5
 
 go install github.com/Songmu/goxz/cmd/goxz@v0.10.1
 
